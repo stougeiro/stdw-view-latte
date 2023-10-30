@@ -1,0 +1,21 @@
+{
+    "name": "stougeiro/stdw-view-latte",
+    "type": "package",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "S.Tougeiro",
+            "email": "sidneytougeiro@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "STDW\\View\\Latte\\": "src/"
+        }
+    },
+    "minimum-stability": "dev",
+    "require": {
+        "stougeiro/stdw-contract": "dev-main",
+        "latte/latte": "^3.0.10"
+    }
+}
