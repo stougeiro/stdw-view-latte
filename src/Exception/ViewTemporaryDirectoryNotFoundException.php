@@ -5,5 +5,5 @@
     use Exception;
 
 
-    class ViewTemporartyDirectoryNotFoundException extends Exception
+    class ViewTemporaryDirectoryNotFoundException extends Exception
     { }

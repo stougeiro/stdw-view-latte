@@ -3,7 +3,7 @@
     namespace STDW\View\Latte;
 
     use STDW\Contract\ViewHandlerInterface;
-    use STDW\View\Latte\Exception\ViewTemporartyDirectoryNotFoundException;
+    use STDW\View\Latte\Exception\ViewTemporaryDirectoryNotFoundException;
     use STDW\View\Latte\Exception\ViewFileNotFoundException;
     use Latte\Engine;
 
@@ -16,7 +16,7 @@
         public function __construct(string $temporary_directory)
         {
             if ( ! is_dir($temporary_directory) || ! file_exists($temporary_directory)) {
-                throw new ViewTemporartyDirectoryNotFoundException("View: Directory '{$temporary_directory}' not found");
+                throw new ViewTemporaryDirectoryNotFoundException("View: Directory '{$temporary_directory}' not found");
             }
 
             $this->latte = new Engine();
